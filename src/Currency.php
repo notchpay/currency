@@ -58,7 +58,7 @@ class Currency
      */
     public function __construct(array $config, FactoryContract $cache)
     {
-        $this->config = $config;
+        $this->config = config('currency');
         $this->cache = $cache->store($this->config('cache_driver'));
     }
 
@@ -161,7 +161,6 @@ class Currency
         }
 
         // Format the value
-        $value = number_format($value, $decimals, $decimal, $thousand);
 
         switch ($this->config('driver')) {
             case 'model':
@@ -177,8 +176,9 @@ class Currency
                 break;
         }
 
-        $value = number_format($value, $currency->fraction ?? 2, $decimal, $thousand);
 
+
+        $value = number_format((float) $value, (int) ($currency->fraction ?? 2), $decimal, $thousand);
         // Apply the formatted measurement
         if ($include_symbol) {
             $value = preg_replace($valRegex, $value, $format);
@@ -244,7 +244,15 @@ class Currency
     {
         $code = $code ?: $this->getUserCurrency();
 
-        return Arr::get($this->getCurrencies(), strtoupper($code));
+        switch ($this->config('driver')) {
+            case 'model':
+                return $this->getCurrencies()->firstWhere('code', $code);
+                break;
+
+            default:
+                return Arr::get($this->getCurrencies(), strtoupper($code));
+                break;
+        }
     }
 
     /**
