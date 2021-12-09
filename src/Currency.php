@@ -75,9 +75,8 @@ class Currency
     public function convert($amount, $from = null, $to = null, $format = true)
     {
         // Get currencies involved
-        $from = $from ?: $this->config('default');
-        $to = $to ?: $this->getUserCurrency();
-
+        $from = strtoupper($from ?: $this->config('default'));
+        $to = strtoupper($to ?: $this->getUserCurrency());
         // Get exchange rates
         $from_rate = $this->getCurrencyProp($from, 'exchange_rate');
         $to_rate = $this->getCurrencyProp($to, 'exchange_rate');
