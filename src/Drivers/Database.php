@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Drivers;
+namespace RestUniverse\Currency\Drivers;
 
 use DateTime;
 use Illuminate\Support\Collection;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency;
+namespace RestUniverse\Currency;
 
 use Illuminate\Support\Arr;
 use Illuminate\Contracts\Cache\Factory as FactoryContract;
@@ -289,7 +289,7 @@ class Currency
     /**
      * Get storage driver.
      *
-     * @return \ForexAPI\Currency\Contracts\DriverInterface
+     * @return \RestUniverse\Currency\Contracts\DriverInterface
      */
     public function getDriver()
     {
@@ -310,7 +310,7 @@ class Currency
     /**
      * Get formatter driver.
      *
-     * @return \ForexAPI\Currency\Contracts\FormatterInterface
+     * @return \RestUniverse\Currency\Contracts\FormatterInterface
      */
     public function getFormatter()
     {

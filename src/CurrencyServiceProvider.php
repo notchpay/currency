@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency;
+namespace RestUniverse\Currency;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;

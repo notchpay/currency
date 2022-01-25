@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Console;
+namespace RestUniverse\Currency\Console;
 
 use Illuminate\Support\Arr;
 use Illuminate\Console\Command;
@@ -26,7 +26,7 @@ class Hydrate extends Command
     /**
      * Currency storage instance
      *
-     * @var \ForexAPI\Currency\Contracts\DriverInterface
+     * @var \RestUniverse\Currency\Contracts\DriverInterface
      */
     protected $storage;
 

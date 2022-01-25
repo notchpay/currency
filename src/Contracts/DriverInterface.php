@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Contracts;
+namespace RestUniverse\Currency\Contracts;
 
 use DateTime;
 

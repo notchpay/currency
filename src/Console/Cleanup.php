@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Console;
+namespace RestUniverse\Currency\Console;
 
 use Illuminate\Console\Command;
 
@@ -23,7 +23,7 @@ class Cleanup extends Command
     /**
      * Currency instance
      *
-     * @var \ForexAPI\Currency\Currency
+     * @var \RestUniverse\Currency\Currency
      */
     protected $currency;
 

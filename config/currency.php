@@ -69,13 +69,13 @@ return [
     'drivers' => [
 
         'database' => [
-            'class' => \ForexAPI\Currency\Drivers\Database::class,
+            'class' => \RestUniverse\Currency\Drivers\Database::class,
             'connection' => null,
             'table' => 'currencies',
         ],
 
         'filesystem' => [
-            'class' => \ForexAPI\Currency\Drivers\Filesystem::class,
+            'class' => \RestUniverse\Currency\Drivers\Filesystem::class,
             'disk' => null,
             'path' => 'currencies.json',
         ],
@@ -114,7 +114,7 @@ return [
     'formatters' => [
 
         'php_intl' => [
-            'class' => \ForexAPI\Currency\Formatters\PHPIntl::class,
+            'class' => \RestUniverse\Currency\Formatters\PHPIntl::class,
         ],
 
     ],

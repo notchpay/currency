@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Middleware;
+namespace RestUniverse\Currency\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

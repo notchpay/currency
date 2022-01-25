@@ -1,9 +1,9 @@
 <?php
 
-namespace ForexAPI\Currency\Drivers;
+namespace RestUniverse\Currency\Drivers;
 
 use Illuminate\Support\Arr;
-use ForexAPI\Currency\Contracts\DriverInterface;
+use RestUniverse\Currency\Contracts\DriverInterface;
 
 abstract class AbstractDriver implements DriverInterface
 {

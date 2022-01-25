@@ -1,9 +1,9 @@
 <?php
 
-namespace ForexAPI\Currency\Formatters;
+namespace RestUniverse\Currency\Formatters;
 
 use NumberFormatter;
-use ForexAPI\Currency\Contracts\FormatterInterface;
+use RestUniverse\Currency\Contracts\FormatterInterface;
 
 class PHPIntl implements FormatterInterface
 {
