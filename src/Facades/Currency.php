@@ -1,6 +1,6 @@
 <?php
 
-namespace ForexAPI\Currency\Facades;
+namespace RestUniverse\Currency\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
