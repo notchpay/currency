@@ -1,6 +1,6 @@
 {
-  "name": "forexapi/currency",
-  "description": "This provides Laravel with currency functions such as currency formatting and conversion using up-to-date exchange rates.",
+  "name": "restuniverse/currency",
+  "description": "This package provides Laravel functions such as currency formatting and conversion using up-to-date exchange rates.",
   "keywords": [
     "laravel",
     "currency",
@@ -17,15 +17,15 @@
       "email": "ForexAPI@gmail.com"
     },
     {
-      "name": "CHapdel KAMGA",
+      "name": "Chapdel KAMGA",
       "email": "drop@chapdel.me"
     }
   ],
   "require": {
     "php": "^7.2|^8.0",
-    "illuminate/support": "^6.0|^7.0|^8.0",
-    "illuminate/console": "^6.0|^7.0|^8.0",
-    "illuminate/cache": "^6.0|^7.0|^8.0"
+    "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+    "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
+    "illuminate/cache": "^6.0|^7.0|^8.0|^9.0"
   },
   "suggest": {
     "illuminate/database": "Allows for storing of currencies in the database"
@@ -41,16 +41,16 @@
       "src/helpers.php"
     ],
     "psr-4": {
-      "ForexAPI\\Currency\\": "src/"
+      "RestUniverse\\Currency\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "ForexAPI\\Currency\\CurrencyServiceProvider"
+        "RestUniverse\\Currency\\CurrencyServiceProvider"
       ],
       "aliases": {
-        "Currency": "ForexAPI\\Currency\\Facades\\Currency"
+        "Currency": "RestUniverse\\Currency\\Facades\\Currency"
       }
     }
   }
