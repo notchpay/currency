@@ -1021,7 +1021,7 @@ class Hydrate extends Command
         //get rates form forexapi
         $r = Http::withHeaders([
             'X-API-Key' => config('currency.api_key'),
-        ])->get('https://api.forexapi.world/rates');
+        ])->get('https://api.restuniverse.com/currencies/rates');
 
 
 
@@ -1071,10 +1071,10 @@ class Hydrate extends Command
             }
 
 
-            $this->info("Rates hydrated from forexapi");
+            $this->info("Rates hydrated from Rest Universe");
         } else {
 
-            $this->error("Failed to fetch rates from forexapi");
+            $this->error("Failed to fetch rates from Rest Universe");
         }
     }
 }
