@@ -33,7 +33,7 @@ class CreateCurrencyTable extends Migration
             $table->string('symbol', 25);
             $table->string('format', 50);
             $table->string('exchange_rate');
-            $table->boolean('active')->default(false);
+            $table->tinyInteger('fraction')->default(2);
             $table->timestamps();
         });
     }

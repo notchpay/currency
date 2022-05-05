@@ -26,7 +26,7 @@ return [
     */
 
     'api_key' => env(
-        "FOREXAPI_KEY",
+        "RESTUNIVERE_API_KEY",
     ),
 
     /*
@@ -82,7 +82,7 @@ return [
 
         'model' => [
             'table' => 'currencies',
-            'class' => Currency::class
+            'class' => App\Models\Currency::class
         ],
 
     ],
