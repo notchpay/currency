@@ -11,7 +11,7 @@
 From the command line run:
 
 ```bash
-$ composer require notchpay/currency
+$ composer require restuniverse/currency
 ```
 
 ### Laravel's >=5.5 Auto-Discovery
@@ -64,6 +64,8 @@ Run this on the command line from the root of your project to generate the table
 $ php artisan migrate
 ```
 
+> note: Add your API_KEY to the .env file with (REST_UNIVERSE_API_KEY).
+
 ## Basic usage
 
 
@@ -72,6 +74,8 @@ The simplest way to use these methods is through the helper function `currency()
 ```php
 currency($amount, $from = null, $to = null, $format = true)
 ```
+
+
 
 **Arguments:**
 
