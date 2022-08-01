@@ -1021,7 +1021,7 @@ class Hydrate extends Command
         //get rates form forexapi
         $r = Http::withHeaders([
             'X-API-Key' => config('currency.api_key'),
-        ])->get('https://api.restuniverse.com/currencies/rates');
+        ])->withOptions(['verify' => false])->get('https://api.restuniverse.com/currencies/rates');
 
 
 
